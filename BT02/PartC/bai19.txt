@@ -1,0 +1,43 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+#include <set>
+#include <vector>
+#include <algorithm>
+#include <climits>
+#include <map>
+#include <stdio.h>
+#define ll long long
+using namespace std;
+
+void show(int n){
+    int tongdiem = 0;
+    int x = 1;
+    int tongheso = 0;
+    while(x <= n){
+        int diem;
+        int heso;
+        cout << "Diem mon hoc " << x << ": ";
+        cin >> diem;
+        cout << "He so mon hoc " << x << ": ";
+        cin >> heso;
+        tongdiem += diem*heso;
+        tongheso += heso;
+        x++;
+    }
+    cout << "So mon hoc: " << n;
+    cout << endl;
+    cout << "Tong so he so: " << tongheso;
+    cout << endl;
+    cout << "Diem trung binh cua " << n << " mon hoc: " << tongdiem*1.000/tongheso;
+    cout << endl;
+}
+
+
+int main(){
+    int n;
+	cout << "Tong so mon hoc can tinh DTB: ";
+    cin >> n;
+    show(n);
+	return 0;
+}

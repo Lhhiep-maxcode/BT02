@@ -1,0 +1,30 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+#include <set>
+#include <vector>
+#include <algorithm>
+#include <climits>
+#include <map>
+#include <stdio.h>
+#define ll long long
+using namespace std;
+
+void choice(int n){
+    double c = (n-32)*5/9;
+    double k = c + 273.15;
+    cout << n << "\t\t" << setprecision(2) << fixed << c << "\t\t" << k;
+    cout << endl;
+}
+
+
+int main(){
+	int minn, maxx, step;
+    cin >> minn >> maxx >> step;
+    cout << "Fahrenheit" << "\t" << "Celcius" << "\t\t" << "Absolute Value" << "\n";
+    while(minn <= maxx){
+        choice(minn);
+        minn += step;
+    }
+	return 0;
+}

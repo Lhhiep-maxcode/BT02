@@ -1,0 +1,26 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+#include <set>
+#include <vector>
+#include <algorithm>
+#include <climits>
+#include <map>
+#include <stdio.h>
+#define ll long long
+using namespace std;
+
+
+
+int main(){
+	int n = 0;
+    int x;
+    do{
+        cin >> n;
+        if(x != n){
+            cout << n << " ";
+            x = n;
+        }
+    } while(n >= 0);
+	return 0;
+}
